@@ -19,6 +19,7 @@
   "homepage": "https://github.com/judeinno/intro_to_vuejs#readme",
   "dependencies": {
     "express": "^4.15.4",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "webpack": "^3.5.5"
   }
 }
