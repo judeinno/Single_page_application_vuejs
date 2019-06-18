@@ -1,0 +1,24 @@
+{
+  "name": "intro_to_vuejs",
+  "version": "1.0.0",
+  "description": "Getting started with vuejs",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/judeinno/intro_to_vuejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/judeinno/intro_to_vuejs/issues"
+  },
+  "homepage": "https://github.com/judeinno/intro_to_vuejs#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "vue": "^2.6.10"
+  }
+}
