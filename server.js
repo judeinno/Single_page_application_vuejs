@@ -11,6 +11,9 @@ const indexHTML = (() => {
 // express.static Returns all static modules from the dist folder
 app.use('/dist', express.static(path.resolve(__dirname, './dist')));
 
+// Extend the server with webpack-dev-middleware and webpack-hot-middleware for hot reloading
+require('./build/dev-server')(app);
+
 app.get('*', (req, res) => {
   res.write(indexHTML);
   res.end();
