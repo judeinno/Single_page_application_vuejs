@@ -13,7 +13,7 @@
       <footer class="footer">
         <div class="container">
           <div class="content has-text-centered">
-            Follow us on 
+            Follow us on
             <a href="https://twitter.com/judeinno" target="_blank">Twitter</a>
           </div>
         </div>
@@ -25,4 +25,7 @@
 export default {}
 </script>
 
+<style lang="scss">
+@import '~bulma'
+</style>
 
