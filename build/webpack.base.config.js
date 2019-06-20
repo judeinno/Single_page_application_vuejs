@@ -18,6 +18,11 @@ const config = {
           css: 'css-loader',
           'scss': 'css-loader|sass-loader'
         }
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
       }
     ]
   },

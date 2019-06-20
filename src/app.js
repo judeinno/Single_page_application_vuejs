@@ -6,11 +6,12 @@ Vue.component('app', {
   template: `
     `
 })
+console.log(AppLayout)
 
 const app = new Vue({
 
-  // render the templete
-  render: h => h(AppLayout)
+  // No need to call the render since app layout already has a render function
+  ...AppLayout
 })
 
 export { app }
