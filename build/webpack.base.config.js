@@ -1,7 +1,17 @@
-const path =  require('path');
+const path = require('path')
 const config = {
   entry: {
-    app:  path.resolve(__dirname, '../src/client-entry.js')
+    app: path.resolve(__dirname, '../src/client-entry.js')
+  },
+  module: {
+    rules: [
+      {
+        enforce: 'pre',
+        test: /(\.js$)|(\.vue$)/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      }
+    ]
   },
   resolve: {
     alias: {
@@ -13,6 +23,6 @@ const config = {
     publicPath: '/',
     filename: 'assets/js/[name].js'
   }
-};
+}
 
-module.exports = config;
+module.exports = config
