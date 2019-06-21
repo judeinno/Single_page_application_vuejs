@@ -1,11 +1,17 @@
 import Vue from 'vue'
+import AppLayout from '../theme/Layout.vue'
+
+Vue.component('app', {
+  // templete with div having ID app for intial binding
+  template: `
+    `
+})
+console.log(AppLayout)
 
 const app = new Vue({
-  data: {
-    hello: 'Hi there25'
-  },
-  // Helps vueJs know how to rerender the section that its mounted on
-  template: '<div id="app">{{hello}}</div>'
+
+  // No need to call the render since app layout already has a render function
+  ...AppLayout
 })
 
 export { app }
