@@ -1,0 +1,11 @@
+lib-cov
+coverage
+.nyc_output
+node_modules/
+.env
+dist/
+.DS_Store
+.idea
+.vscode/
+yarn.lock
+package-lock.json
