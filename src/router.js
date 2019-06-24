@@ -6,8 +6,9 @@ import Login from './theme/Login.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', component: Category },
-  { path: '/login', component: Login }
+  { path: '/login', component: Login },
+  { path: '/category/front-end', component: Category },
+  { path: '/', redirect: '/category/front-end' }
 ]
 const router = new VueRouter({
   mode: 'history',
