@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const clientConfig = require('./webpack.client.config')
 const serverConfig = require('./webpack.server.config')
 const MFS = require('memory-fs')
+const path = require('path')
 
 module.exports = function setupDevServer (app, onUpdate) {
   // Extend config file and add a new entry point
