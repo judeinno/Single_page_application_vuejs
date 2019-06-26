@@ -4,7 +4,7 @@
   "description": "Getting started with vuejs",
   "scripts": {
     "start": "node server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start test/unit/karma.config.js --single-run"
   },
   "repository": {
     "type": "git",
